@@ -9,3 +9,7 @@ sudo apt-get install --yes nodejs
 # Install Bower, the package manager
 echo "Installing Bower..."
 npm install -g bower
+
+# Install SASS, the CSS preprocessor
+echo "Installing SASS..."
+gem install sass
