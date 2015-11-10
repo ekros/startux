@@ -6,9 +6,21 @@
 curl --silent --location https://deb.nodesource.com/setup_4.x | sudo bash -
 sudo apt-get install --yes nodejs
 
+# Install Yeoman, the scaffolding tool
+echo "Installing Yeoman..."
+npm install -g yo
+
 # Install Bower, the package manager
 echo "Installing Bower..."
 npm install -g bower
+
+# Install grunt, the task runner
+echo "Installing Grunt..."
+npm install -g grunt-cli
+
+# Install gulp, the other task runner
+echo "Installing Gulp..."
+npm install -g gulp
 
 # Install SASS, the CSS preprocessor
 echo "Installing SASS..."
