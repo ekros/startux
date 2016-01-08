@@ -24,6 +24,14 @@ apt-get -y install vim
 echo Installing ag...
 apt-get -y install silversearcher-ag
 
+# Install htop (convenient replacement for ps)
+echo Installing htop...
+apt-get -y install htop
+
+# Install at (application to  execute commands at a given time)
+echo Installing at...
+apt-get -y install at
+
 # Install Atom
 echo Installing Atom...
 # TODO ONLY DO THIS IF NOT INSTALLED
