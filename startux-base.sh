@@ -2,12 +2,6 @@
 # Generic script for preparing a development environtment in Ubuntu Desktop
 # RUN THIS SCRIPT WITH SUDO
 
-# check distro (run only if ubuntu is found)
-if [ "$DESKTOP_SESSION" != "Ubuntu" || "$DESKTOP_SESSION" != "Lubuntu" || "$DESKTOP_SESSION" != "Xubuntu" || "$DESKTOP_SESSION" != "Kubuntu" ]; then
- echo "This is script is not tested on non-ubuntu distros. Terminating..."
- exit 1
-fi
-
 # profile backup
 echo "Making a backup of your .profile file..."
 cp -f $HOME/.profile $HOME/.profile.backup
