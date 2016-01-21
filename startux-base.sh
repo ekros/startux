@@ -10,6 +10,10 @@ cp -f $HOME/.profile $HOME/.profile.backup
 echo Retrieving list of packages...
 apt-get -qq update
 
+# Install curl
+echo Installing curl...
+apt-get -y install curl
+
 # Install VIM
 echo Installing Vim...
 apt-get -y install vim

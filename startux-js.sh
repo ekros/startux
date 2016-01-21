@@ -4,7 +4,11 @@
 
 # Install nodejs (https://nodejs.org/en/download/package-manager/)
 curl --silent --location https://deb.nodesource.com/setup_4.x | sudo bash -
-sudo apt-get install --yes nodejs
+apt-get install --yes nodejs
+
+# Install npm, the JS package manager
+echo "Installing npm..."
+apt-get install --yes npm
 
 # Install Yeoman, the scaffolding tool
 echo "Installing Yeoman..."
