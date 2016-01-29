@@ -30,6 +30,10 @@ apt-get -y install htop
 echo Installing at...
 apt-get -y install at
 
+# Install Remmina (RDP / VNC client)
+echo Installing Remmina...
+apt-get -y install remmina
+
 # Install Atom
 echo Installing Atom...
 # TODO ONLY DO THIS IF NOT INSTALLED
