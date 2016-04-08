@@ -41,6 +41,9 @@ wget https://github.com/atom/atom/releases/download/v1.0.19/atom-amd64.deb && su
 alias gg="git status && git log | head"
 echo "alias gg=\"git status && git log | head\"" >> $HOME/.bashrc
 
+#lol, a popular git log alias
+git config --global alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit --all"
+
 # Post execution steps:
   # Configure git email and name
   # git config --global user.email "you@example.com"
