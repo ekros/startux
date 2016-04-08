@@ -45,6 +45,10 @@ echo "alias gg=\"git status && git log | head\"" >> $HOME/.bashrc
 
 #lol, a popular git log alias
 git config --global alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit --all"
+git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
 
 # Post execution steps:
   # Configure git email and name
