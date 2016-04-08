@@ -2,12 +2,6 @@
 # Generic script for preparing a development environtment in Ubuntu Desktop
 # RUN THIS SCRIPT WITH SUDO
 
-# check distro (run only if ubuntu is found)
-if [ "$DESKTOP_SESSION" != "Ubuntu" || "$DESKTOP_SESSION" != "Lubuntu" || "$DESKTOP_SESSION" != "Xubuntu" || "$DESKTOP_SESSION" != "Kubuntu" ]; then
- echo "This is script is not tested on non-ubuntu distros. Terminating..."
- exit 1
-fi
-
 # profile backup
 echo "Making a backup of your .profile file..."
 cp -f $HOME/.profile $HOME/.profile.backup
@@ -15,6 +9,10 @@ cp -f $HOME/.profile $HOME/.profile.backup
 # Update repositories
 echo Retrieving list of packages...
 apt-get -qq update
+
+# Install curl
+echo Installing curl...
+apt-get -y install curl
 
 # Install VIM
 echo Installing Vim...
@@ -31,6 +29,10 @@ apt-get -y install htop
 # Install at (application to  execute commands at a given time)
 echo Installing at...
 apt-get -y install at
+
+# Install Remmina (RDP / VNC client)
+echo Installing Remmina...
+apt-get -y install remmina
 
 # Install Atom
 echo Installing Atom...
