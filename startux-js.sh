@@ -29,3 +29,7 @@ npm install -g gulp
 # Install SASS, the CSS preprocessor
 echo "Installing SASS..."
 gem install sass
+
+# Install live-server, the web server for development with live reload
+echo "Installing live-server..."
+npm install -g live-server
