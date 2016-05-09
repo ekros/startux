@@ -50,6 +50,13 @@ git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
 
+#install bash-git-prompt, an informative bash prompt
+echo Installing bash-git-prompt...
+cd ~
+git clone https://github.com/magicmonty/bash-git-prompt.git .bash-git-prompt --depth=1
+echo "source ~/.bash-git-prompt/gitprompt.sh" >> $HOME/.bashrc
+GIT_PROMPT_ONLY_IN_REPO=1
+
 # Post execution steps:
   # Configure git email and name
   # git config --global user.email "you@example.com"
