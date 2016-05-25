@@ -10,6 +10,10 @@ cp -f $HOME/.profile $HOME/.profile.backup
 echo Retrieving list of packages...
 apt-get -qq update
 
+# Install Terminator. A super-killer terminal
+echo Installing Terminator...
+apt-get -y install terminator
+
 # Install curl
 echo Installing curl...
 apt-get -y install curl
@@ -37,9 +41,14 @@ apt-get -y install remmina
 # Install Atom
 echo Installing Atom...
 # TODO ONLY DO THIS IF NOT INSTALLED
-wget https://github.com/atom/atom/releases/download/v1.0.19/atom-amd64.deb && sudo dpkg -i atom-amd64.deb
+wget https://github.com/atom/atom/releases/download/v1.7.4/atom-amd64.deb  && sudo dpkg -i atom-amd64.deb
+
+# Install Atom packages
+echo Installing Atom extra packages...
+apm install atom-beautify color-picker emmet highlight-selected javascript-snippets meteor-helpers meteor-snippets react
 
 # aliases
+echo Setting git aliases... lol st co br ci...
 alias gg="git status && git log | head"
 echo "alias gg=\"git status && git log | head\"" >> $HOME/.bashrc
 

@@ -3,7 +3,7 @@
 # RUN THIS SCRIPT WITH SUDO
 
 # Install nodejs (https://nodejs.org/en/download/package-manager/)
-curl --silent --location https://deb.nodesource.com/setup_4.x | sudo bash -
+curl --silent --location https://deb.nodesource.com/setup_6.x | sudo bash -
 apt-get install --yes nodejs
 
 # Install npm, the JS package manager
