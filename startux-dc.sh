@@ -2,7 +2,7 @@
 # Configure docker-compose
 # Follow these instructions https://docs.docker.com/compose/install/
 # and then execute this script
-# RUN THIS SCRIPT WITH SUDO
+# DO NOT RUN THIS SCRIPT AS ROOT
 
 # Add this line to /etc/default/docker (it allows you to connect to the docker daemon)
 echo "Configuring /etc/default/docker..."

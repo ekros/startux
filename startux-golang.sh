@@ -1,6 +1,6 @@
 #!/bin/bash
 # Setup the system for golang development
-# RUN THIS SCRIPT WITH SUDO
+# DO NOT RUN THIS SCRIPT AS ROOT
 
 VERSION="1.5.1"
 OS="linux"
