@@ -49,7 +49,7 @@ sudo apt-get -y install npm
 
 # Install Atom packages
 echo Installing Atom extra packages...
-apm install atom-beautify color-picker emmet highlight-selected javascript-snippets meteor-helpers meteor-snippets react
+apm install atom-beautify color-picker emmet highlight-selected javascript-snippets meteor-helper meteor-snippets react
 
 # aliases
 echo Setting git aliases... lol st co br ci...
