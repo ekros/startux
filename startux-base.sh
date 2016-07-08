@@ -55,6 +55,9 @@ apm install atom-beautify color-picker emmet highlight-selected javascript-snipp
 echo "Setting git aliases... lol st co br ci...\e[0m"
 alias gg="git status && git log | head"
 echo "alias gg=\"git status && git log | head\"" >> $HOME/.bashrc
+echo "Setting alias 'clut', it checks code diff for Comments, Logs and TODOs"
+alias clut="git diff | grep // && git diff | grep console. && git diff | grep TODO"
+echo "alias clut=\"git diff | grep // && git diff | grep console. && git diff | grep TODO\"" >> $HOME/.bashrc
 
 #lol, a popular git log alias
 git config --global alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit --all"
