@@ -1,0 +1,21 @@
+'.source.js':
+  'Console dir':
+    'prefix': 'dir'
+    'body': 'console.dir($1);'
+
+'.source.js':
+  'React Component ES6':
+    'prefix': 'recomp'
+    'body': """
+    import React from 'react';
+    
+    export default class $1 extends React.Component {
+      render() {
+        $2
+        return (
+          <div></div>
+        );
+      }
+    }
+    
+    """
