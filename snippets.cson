@@ -19,3 +19,22 @@
     }
     
     """
+
+'.source.js':
+  'React Stateless Component':
+    'prefix': 'stateless'
+    'body': """
+    import React from 'react';
+
+    const $1 = () => {
+      return (
+        <div></div>
+      );
+    };
+
+    $1.propTypes = {
+    };
+
+    export default $1;
+    
+    """
