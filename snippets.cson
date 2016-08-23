@@ -2,8 +2,25 @@
   'Console dir':
     'prefix': 'dir'
     'body': 'console.dir($1);'
+      
+  'React Stateless Component':
+    'prefix': 'stateless'
+    'body': """
+    import React from 'react';
 
-'.source.js':
+    const $1 = () => {
+      return (
+        <div></div>
+      );
+    \\};
+
+    $1.propTypes = {
+    \\};
+
+    export default $1;
+    
+    """
+    
   'React Component ES6':
     'prefix': 'recomp'
     'body': """
@@ -15,26 +32,11 @@
         return (
           <div></div>
         );
-      }
-    }
+      \\}
+    \\}
     
-    """
-
-'.source.js':
-  'React Stateless Component':
-    'prefix': 'stateless'
-    'body': """
-    import React from 'react';
-
-    const $1 = () => {
-      return (
-        <div></div>
-      );
-    };
-
     $1.propTypes = {
-    };
-
-    export default $1;
-    
+      $3
+    \\};
+      
     """
