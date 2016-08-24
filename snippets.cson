@@ -2,7 +2,11 @@
   'Console dir':
     'prefix': 'dir'
     'body': 'console.dir($1);'
-      
+
+  'React proptypes':
+    'prefix': 'rpt'
+    'body': 'React.PropTypes.'
+          
   'React Stateless Component':
     'prefix': 'stateless'
     'body': """
