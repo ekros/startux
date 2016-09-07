@@ -49,7 +49,7 @@ sudo apt-get -y install npm
 
 # Install Atompackages
 echo -e "\e[1;31mInstalling Atomextra packages...\e[0m"
-apm install atom-beautify color-picker emmet highlight-selected javascript-snippets meteor-helper meteor-snippets react linter-lesshint git-time-machine git-plus merge-conflicts semicol
+apm install atom-beautify color-picker emmet highlight-selected javascript-snippets meteor-helper meteor-snippets react linter-lesshint git-time-machine git-plus merge-conflicts semicol goto goto-definition
 
 # aliases
 echo "Setting git aliases... lol st co br ci...\e[0m"
