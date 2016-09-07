@@ -6,7 +6,11 @@
   'React proptypes':
     'prefix': 'rpt'
     'body': 'React.PropTypes.'
-          
+ 
+  'Arrow function':
+    'prefix': 'arr'
+    'body': '() => {$1}'
+         
   'React Stateless Component':
     'prefix': 'stateless'
     'body': """
