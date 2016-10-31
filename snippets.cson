@@ -7,6 +7,15 @@
     'prefix': 'rpt'
     'body': 'React.PropTypes.'
  
+  'React class constructor':
+    'prefix': 'rcon'
+    'body': """
+    constructor(props) {
+      super(props);
+      $1
+    }
+    """
+
   'Arrow function':
     'prefix': 'arr'
     'body': '() => {$1}'
