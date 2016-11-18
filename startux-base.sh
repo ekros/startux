@@ -38,6 +38,11 @@ sudo apt-get -y install at
 echo -e "\e[1;31mInstalling Remmina...\e[0m"
 sudo apt-get -y install remmina
 
+# Install Trash, like rm but sends to trash
+echo -e "\e[1;31mInstalling Trash...\e[0m"
+sudo apt-get -y install trash
+
+sudo apt-get -y install remmina
 # Install Atom
 echo -e "\e[1;31mInstalling Atom...\e[0m"
 # TODO ONLY DO THIS IF NOT INSTALLED
@@ -46,6 +51,9 @@ wget https://github.com/atom/atom/releases/download/v1.7.4/atom-amd64.deb  && su
 # Install npm, necessary to install atompackages
 echo -e "\e[1;31mInstalling npm...\e[0m"
 sudo apt-get -y install npm
+
+# Install vtop, an activity monitor
+sudo npm install -g vtop
 
 # Install Atompackages
 echo -e "\e[1;31mInstalling Atomextra packages...\e[0m"
