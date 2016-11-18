@@ -33,3 +33,7 @@ sudo gem install sass
 # Install live-server, the web server for development with live reload
 echo "Installing live-server..."
 sudo npm install -g live-server
+
+# Install David. It checks if the last package versions are installed
+echo "Installing David..."
+sudp npm install -g david
