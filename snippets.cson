@@ -64,3 +64,12 @@
     \\};
       
     """
+
+  'Destructuring this.state':
+    'prefix': 'ts'
+    'body': 'const { $1 } = this.state;'
+  
+  'Destructuring this.props':
+    'prefix': 'tp'
+    'body': 'const { $1 } = this.props;'
+
