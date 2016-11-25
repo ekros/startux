@@ -42,7 +42,6 @@ sudo apt-get -y install remmina
 echo -e "\e[1;31mInstalling Trash...\e[0m"
 sudo apt-get -y install trash
 
-sudo apt-get -y install remmina
 # Install Atom
 echo -e "\e[1;31mInstalling Atom...\e[0m"
 # TODO ONLY DO THIS IF NOT INSTALLED
