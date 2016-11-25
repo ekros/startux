@@ -42,6 +42,18 @@ sudo apt-get -y install remmina
 echo -e "\e[1;31mInstalling Trash...\e[0m"
 sudo apt-get -y install trash
 
+# Install zsh, an alternative customizable bash shell
+echo -e "\e[1;31mInstalling Zsh...\e[0m"
+sudo apt-get -y install Zsh
+
+# Set zsh as default shell
+echo -e "\e[1;31mSetting Zsh as default shell...\e[0m"
+chsh -s /bin/zsh
+
+# Install oh my zsh! Themes for zsh shell
+echo -e "\e[1;31mInstalling oh my zsh!...\e[0m"
+curl -L http://install.ohmyz.sh | sh
+
 # Install Atom
 echo -e "\e[1;31mInstalling Atom...\e[0m"
 # TODO ONLY DO THIS IF NOT INSTALLED
