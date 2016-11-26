@@ -10,6 +10,10 @@ sudo apt-get install --yes nodejs
 echo "Installing npm..."
 sudo apt-get install --yes npm
 
+# Install nodemon, node server with live reload
+echo "Installing nodemon..."
+sudo npm install -g nodemon
+
 # Install Yeoman, the scaffolding tool
 echo "Installing Yeoman..."
 sudo npm install -g yo
