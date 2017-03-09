@@ -67,6 +67,10 @@ sudo apt-get -y install npm
 echo -e "\e[1;31mInstalling vtop...\e[0m"
 sudo npm install -g vtop
 
+# Install fkill, an interactive replacement for kill
+echo -e "\e[1;31mInstalling fkill...\e[0m"
+sudo npm install -g fkill-cli
+
 # Install Atompackages
 echo -e "\e[1;31mInstalling Atomextra packages...\e[0m"
 apm install atom-beautify color-picker emmet highlight-selected javascript-snippets meteor-helper meteor-snippets react linter-lesshint git-time-machine git-plus merge-conflicts semicol goto file-icons atom-ternjs pigments tool-bar markdown-writer tool-bar-markdown-writer markdown-pdf bezier-curve-editor compare-files
@@ -81,12 +85,15 @@ echo "Setting alias 'clut', it checks code diff for Comments, Logs and TODOs"
 alias clut="git diff | grep // && git diff | grep console. && git diff | grep TODO"
 echo "alias clut=\"git diff | grep // && git diff | grep console. && git diff | grep TODO\"" >> $HOME/.bashrc
 
-#lol, a popular git log alias
+# lol, a popular git log alias
 git config --global alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit --all"
 git config --global alias.st status
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
+# git customizations
+git config --global help.autocorrect 50
+git config --global color.status.changed "white yellow bold"
 
 #install bash-git-prompt, an informative bash prompt
 echo -e "\e[1;31mInstalling bash-git-prompt...\e[0m"
