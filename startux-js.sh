@@ -40,4 +40,8 @@ sudo npm install -g live-server
 
 # Install David. It checks if the last package versions are installed
 echo "Installing David..."
-sudp npm install -g david
+sudo npm install -g david
+
+# Set save-exact = true in npmrc (It configures an exact version in package.json)
+echo "Setting up npm config..."
+npm config set save-exact=true
