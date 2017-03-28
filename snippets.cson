@@ -76,3 +76,16 @@
   'bind':
     'prefix': 'bin'
     'body': 'this.$1 = this.$1.bind(this);'
+
+  'Performance measurement':
+    'prefix': 'perf'
+    'body': """
+    // start meas here
+    Perf.start();
+    // stop meas here
+    Perf.stop();
+    const meas = Perf.getLastMeasurements();
+    Perf.printInclusive(meas);
+    console.log("wasted:");
+    Perf.printWasted(meas);
+    """
