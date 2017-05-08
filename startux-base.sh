@@ -71,6 +71,10 @@ sudo npm install -g vtop
 echo -e "\e[1;31mInstalling fkill...\e[0m"
 sudo npm install -g fkill-cli
 
+# Install git quick-stats, repo statistics
+echo -e "\e[1;31mInstalling git quick-stats...\e[0m"
+git clone https://github.com/arzzen/git-quick-stats.git && cd git-quick-stats && sudo make install
+
 # Install Atompackages
 echo -e "\e[1;31mInstalling Atomextra packages...\e[0m"
 apm install atom-beautify color-picker emmet highlight-selected javascript-snippets meteor-helper meteor-snippets react linter-lesshint git-time-machine git-plus merge-conflicts semicol goto file-icons atom-ternjs pigments tool-bar markdown-writer tool-bar-markdown-writer markdown-pdf bezier-curve-editor compare-files atom-typescript
