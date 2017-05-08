@@ -31,6 +31,7 @@
     'prefix': 'stateless'
     'body': """
     import React from 'react';
+    import PropTypes from 'prop-types';
 
     const $1 = () => {
       return (
@@ -49,7 +50,8 @@
     'prefix': 'recomp'
     'body': """
     import React from 'react';
-    
+    import PropTypes from 'prop-types';
+
     export default class $1 extends React.Component {
       render() {
         $2
