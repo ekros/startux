@@ -81,7 +81,7 @@
     
   'PropTypes.function':
     'prefix': 'prfun'
-    'body': '$1: PropTypes.function,'
+    'body': '$1: PropTypes.func,'
 
   'Destructuring this.state':
     'prefix': 'ts'
