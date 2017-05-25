@@ -67,6 +67,22 @@
       
     """
 
+  'PropTypes.object':
+    'prefix': 'probj'
+    'body': '$1: PropTypes.object,'
+    
+  'PropTypes.number':
+    'prefix': 'prnum'
+    'body': '$1: PropTypes.number,'
+    
+  'PropTypes.string':
+    'prefix': 'prstr'
+    'body': '$1: PropTypes.string,'
+    
+  'PropTypes.function':
+    'prefix': 'prfun'
+    'body': '$1: PropTypes.function,'
+
   'Destructuring this.state':
     'prefix': 'ts'
     'body': 'const { $1 } = this.state;'
