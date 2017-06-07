@@ -6,7 +6,30 @@
   'React proptypes':
     'prefix': 'rpt'
     'body': 'React.PropTypes.'
- 
+
+  'Komposer container':
+    'prefix': 'container'
+    'body': """
+    import { Meteor } from 'meteor/meteor';
+    import { withMeteorTracker } from '/imports/ui/lib/react-komposer-meteor';
+
+    function reactiveMapper(props, onData) {
+      const subReady = Meteor.subscribe('your_subscription').ready();
+
+      if (subReady) {
+        // your finds here
+      }
+
+      onData(undefined,
+        {
+        });
+    }
+
+    const $1 = withMeteorTracker(reactiveMapper)($2);
+
+    export default $1;
+    """ 
+
   'React class constructor':
     'prefix': 'rcon'
     'body': """
