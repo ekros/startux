@@ -90,6 +90,10 @@
       
     """
 
+  'Pretty print component state':
+    'prefix': 'printstate'
+    'body': '<pre>{JSON.stringify(this.state, null, 2)}</pre>'
+
   'PropTypes.object':
     'prefix': 'probj'
     'body': '$1: PropTypes.object,'
