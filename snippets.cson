@@ -110,6 +110,10 @@
     'prefix': 'prfun'
     'body': '$1: PropTypes.func,'
 
+  'PropTypes.bool':
+    'prefix': 'prboo'
+    'body': '$1: PropTypes.bool,'
+
   'Destructuring this.state':
     'prefix': 'ts'
     'body': 'const { $1 } = this.state;'
