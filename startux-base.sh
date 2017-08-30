@@ -63,6 +63,10 @@ wget https://github.com/atom/atom/releases/download/v1.7.4/atom-amd64.deb  && su
 echo -e "\e[1;31mInstalling npm...\e[0m"
 sudo apt-get -y install npm
 
+# Install Meld, a graphical diff tool
+echo -e "\e[1;31mInstalling Meld...\e[0m"
+sudo apt-get -y install meld
+
 # Install code-notes, a TODOs, NOTEs,... code scanner
 echo -e "\e[1;31mInstalling code-notes...\e[0m"
 sudo npm install code-notes -g
