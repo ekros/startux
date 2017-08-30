@@ -84,8 +84,14 @@ echo -e "\e[1;31mInstalling git quick-stats...\e[0m"
 git clone https://github.com/arzzen/git-quick-stats.git && cd git-quick-stats && sudo make install
 
 # Install Atompackages
-echo -e "\e[1;31mInstalling Atomextra packages...\e[0m"
-apm install color-picker emmet highlight-selected javascript-snippets meteor-helper meteor-snippets react linter-lesshint git-time-machine git-plus merge-conflicts semicol goto file-icons atom-ternjs pigments tool-bar markdown-writer tool-bar-markdown-writer markdown-pdf bezier-curve-editor compare-files atom-typescript refactor js-refactor atom-prettier autocomplete-js-import
+echo -e "\e[1;31mInstalling Atom extra packages...\e[0m"
+apm install color-picker emmet highlight-selected javascript-snippets meteor-helper meteor-snippets react linter-lesshint git-time-machine git-plus merge-conflicts semicol goto file-icons atom-ternjs pigments tool-bar markdown-writer tool-bar-markdown-writer markdown-pdf bezier-curve-editor compare-files atom-typescript refactor js-refactor atom-prettier autocomplete-js-import clipboard-plus
+
+# setting clipboard-plus shortcuts
+
+echo -e "\e[1;31mSetting up atom packages...\e[0m"
+echo "'.platform-linux atom-text-editor:not([mini])':
+  'ctrl-shift-v': 'clipboard-plus:toggle'" >> ~/.atom/keymap.cson
 
 echo "Note: Use this instructions to configure atom-ternjs https://atom.io/packages/atom-ternjs"
 
