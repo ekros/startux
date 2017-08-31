@@ -67,6 +67,10 @@ sudo apt-get -y install npm
 echo -e "\e[1;31mInstalling Meld...\e[0m"
 sudo apt-get -y install meld
 
+# Install Zeal, an offline developer docs
+echo -e "\e[1;31mInstalling Zeal...\e[0m"
+sudo apt-get install zeal
+
 # Install code-notes, a TODOs, NOTEs,... code scanner
 echo -e "\e[1;31mInstalling code-notes...\e[0m"
 sudo npm install code-notes -g
