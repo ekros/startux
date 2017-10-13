@@ -75,9 +75,9 @@ sudo apt-get install zeal
 echo -e "\e[1;31mInstalling code-notes...\e[0m"
 sudo npm install code-notes -g
 
-# Install vtop, an activity monitor
-echo -e "\e[1;31mInstalling vtop...\e[0m"
-sudo npm install -g vtop
+# Install gtop, an activity monitor
+echo -e "\e[1;31mInstalling gtop...\e[0m"
+sudo npm install -g gtop
 
 # Install fkill, an interactive replacement for kill
 echo -e "\e[1;31mInstalling fkill...\e[0m"
