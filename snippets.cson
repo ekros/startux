@@ -46,8 +46,7 @@
   'Log a variable':
     'prefix': 'logvar'
     'body': """
-    console.log("$1");
-    console.log($1);
+    console.log("$1", $1);
     """
         
   'React Stateless Component':
