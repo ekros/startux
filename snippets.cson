@@ -67,26 +67,26 @@
     export default $1;
     
     """
-    
-  'React Component ES6':
+  
+  'React Component ES7':
     'prefix': 'recomp'
     'body': """
     import React from 'react';
     import PropTypes from 'prop-types';
 
     export default class $1 extends React.Component {
-      render() {
+      static propTypes = {
         $2
+      };
+
+      render() {
+        $3
         return (
           <div></div>
         );
       \\}
     \\}
     
-    $1.propTypes = {
-      $3
-    \\};
-      
     """
 
   'Pretty print component state':
