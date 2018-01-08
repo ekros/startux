@@ -71,6 +71,10 @@ sudo apt-get -y install meld
 echo -e "\e[1;31mInstalling Zeal...\e[0m"
 sudo apt-get install zeal
 
+# Install tig, git commits browser
+echo -e "\e[1;31mInstalling tig...\e[0m"
+sudo apt install tig
+
 # Install code-notes, a TODOs, NOTEs,... code scanner
 echo -e "\e[1;31mInstalling code-notes...\e[0m"
 sudo npm install code-notes -g
