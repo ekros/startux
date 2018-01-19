@@ -75,6 +75,10 @@ sudo apt-get install zeal
 echo -e "\e[1;31mInstalling tig...\e[0m"
 sudo apt install tig
 
+# Install depcheck, a npm deps checker
+echo -e "\e[1;31mInstalling depcheck...\e[0m"
+sudo npm install depcheck -g
+
 # Install code-notes, a TODOs, NOTEs,... code scanner
 echo -e "\e[1;31mInstalling code-notes...\e[0m"
 sudo npm install code-notes -g
