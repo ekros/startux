@@ -137,3 +137,8 @@
     console.log("wasted:");
     Perf.printWasted(meas);
     """
+  
+  'Component prop':
+    'prefix': 'pp'
+    'body': '$1={$1}'
+
