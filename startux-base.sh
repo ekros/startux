@@ -97,7 +97,7 @@ git clone https://github.com/arzzen/git-quick-stats.git && cd git-quick-stats &&
 
 # Install Atompackages
 echo -e "\e[1;31mInstalling Atom extra packages...\e[0m"
-apm install color-picker emmet highlight-selected javascript-snippets meteor-helper meteor-snippets react linter-lesshint git-time-machine git-plus merge-conflicts semicol goto file-icons atom-ternjs pigments tool-bar markdown-writer tool-bar-markdown-writer markdown-pdf bezier-curve-editor compare-files atom-typescript refactor js-refactor atom-prettier autocomplete-js-import clipboard-plus meteor-api
+apm install color-picker emmet highlight-selected javascript-snippets meteor-helper meteor-snippets react linter-lesshint git-time-machine git-plus merge-conflicts semicol goto file-icons atom-ternjs pigments tool-bar markdown-writer tool-bar-markdown-writer markdown-pdf bezier-curve-editor split-diff atom-typescript refactor js-refactor atom-prettier autocomplete-js-import clipboard-plus meteor-api
 
 # setting clipboard-plus shortcuts
 
