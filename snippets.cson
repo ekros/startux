@@ -142,3 +142,6 @@
     'prefix': 'pp'
     'body': '$1={$1}'
 
+  'className':
+    'prefix': 'cn'
+    'body': 'className="$1"'
