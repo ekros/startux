@@ -76,6 +76,10 @@ sudo apt install zeal
 echo -e "\e[1;31mInstalling tig...\e[0m"
 sudo apt install tig
 
+# Install git kraken, an awesome GIT GUI
+echo -e "\e[1;31mInstalling GitKraken...\e[0m"
+wget https://release.gitkraken.com/linux/gitkraken-amd64.deb && sudo dpkg -i gitkraken-amd64.deb
+
 # Install depcheck, a npm deps checker
 echo -e "\e[1;31mInstalling depcheck...\e[0m"
 sudo npm install depcheck -g
