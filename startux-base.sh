@@ -57,8 +57,9 @@ curl -L http://install.ohmyz.sh | sh
 # Install Atom
 echo -e "\e[1;31mInstalling Atom...\e[0m"
 # TODO ONLY DO THIS IF NOT INSTALLED
-#wget https://github.com/atom/atom/releases/download/v1.7.4/atom-amd64.deb  && sudo dpkg -i atom-amd64.deb
-sudo apt install atom
+wget https://atom.io/download/deb && sudo dpkg -i deb
+echo -e "\e[1;31mInstalling missing dependencies (if any)...\e[0m"
+sudo apt -fy install
 
 # Install npm, necessary to install atompackages
 echo -e "\e[1;31mInstalling npm...\e[0m"
@@ -70,11 +71,11 @@ sudo apt -y install meld
 
 # Install Zeal, an offline developer docs
 echo -e "\e[1;31mInstalling Zeal...\e[0m"
-sudo apt install zeal
+sudo apt -y install zeal
 
 # Install tig, git commits browser
 echo -e "\e[1;31mInstalling tig...\e[0m"
-sudo apt install tig
+sudo apt -y install tig
 
 # Install git kraken, an awesome GIT GUI
 echo -e "\e[1;31mInstalling GitKraken...\e[0m"
@@ -100,12 +101,19 @@ sudo npm install -g fkill-cli
 echo -e "\e[1;31mInstalling git quick-stats...\e[0m"
 git clone https://github.com/arzzen/git-quick-stats.git && cd git-quick-stats && sudo make install
 
+# Install apm, the Atom Package manager
+echo -e "\e[1;31mInstalling apm, Atom Package Manager...\e[0m"
+sudo npm install -g apm
+
 # Install Atompackages
 echo -e "\e[1;31mInstalling Atom extra packages...\e[0m"
 apm install color-picker emmet highlight-selected javascript-snippets meteor-snippets react git-time-machine git-plus merge-conflicts semicol goto file-icons atom-ternjs pigments tool-bar markdown-writer tool-bar-markdown-writer markdown-pdf bezier-curve-editor split-diff atom-typescript refactor js-refactor atom-prettier autocomplete-js-import clipboard-plus meteor-api
 
-# setting clipboard-plus shortcuts
+# Instal missing dependencies
+echo -e "\e[1;31mInstalling missing dependencies (if any)...\e[0m"
+sudo apt -fy install
 
+# setting clipboard-plus shortcuts
 echo -e "\e[1;31mSetting up atom packages...\e[0m"
 echo "'.platform-linux atom-text-editor:not([mini])':
   'ctrl-shift-v': 'clipboard-plus:toggle'" >> ~/.atom/keymap.cson
