@@ -42,18 +42,6 @@ sudo apt -y install remmina
 echo -e "\e[1;31mInstalling Trash...\e[0m"
 sudo apt -y install trash
 
-# Install zsh, an alternative customizable bash shell
-echo -e "\e[1;31mInstalling Zsh...\e[0m"
-sudo apt -y install Zsh
-
-# Set zsh as default shell
-echo -e "\e[1;31mSetting Zsh as default shell...\e[0m"
-chsh -s /bin/zsh
-
-# Install oh my zsh! Themes for zsh shell
-echo -e "\e[1;31mInstalling oh my zsh!...\e[0m"
-curl -L http://install.ohmyz.sh | sh
-
 # Install Atom
 echo -e "\e[1;31mInstalling Atom...\e[0m"
 # TODO ONLY DO THIS IF NOT INSTALLED
@@ -112,13 +100,33 @@ echo "'.platform-linux atom-text-editor:not([mini])':
 
 echo "Note: Use this instructions to configure atom-ternjs https://atom.io/packages/atom-ternjs"
 
+
+# Install zsh, an alternative customizable bash shell
+echo -e "\e[1;31mInstalling Zsh...\e[0m"
+sudo apt -y install Zsh
+
+# Set zsh as default shell
+echo -e "\e[1;31mSetting Zsh as default shell...\e[0m"
+chsh -s /bin/zsh
+
+# Install oh my zsh! Themes for zsh shell
+echo -e "\e[1;31mInstalling oh my zsh!...\e[0m"
+curl -L http://install.ohmyz.sh | sh
+
+# Set zsh theme to agnoster
+echo "ZSH_THEME=agnoster" >> $HOME/.zshrc
+
+# Install Powerline fonts (required for agnoster zsh theme)
+echo -e "\e[1;31mInstalling Powerline fonts!...\e[0m"
+sudo apt -y install fonts-powerline
+
 # aliases
 echo "Setting git aliases... lol st co br ci...\e[0m"
 alias gg="git status && git log | head"
-echo "alias gg=\"git status && git log | head\"" >> $HOME/.bashrc
+echo "alias gg=\"git status && git log | head\"" >> $HOME/.zshrc
 echo "Setting alias 'clut', it checks code diff for Comments, Logs and TODOs"
 alias clut="git diff | grep // && git diff | grep console. && git diff | grep TODO"
-echo "alias clut=\"git diff | grep // && git diff | grep console. && git diff | grep TODO\"" >> $HOME/.bashrc
+echo "alias clut=\"git diff | grep // && git diff | grep console. && git diff | grep TODO\"" >> $HOME/.zshrc
 
 # lol, a popular git log alias
 git config --global alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit --all"
@@ -130,13 +138,6 @@ git config --global alias.l "log --stat"
 # git customizations
 git config --global help.autocorrect 50
 git config --global color.status.changed "white yellow bold"
-
-#install bash-git-prompt, an informative bash prompt
-echo -e "\e[1;31mInstalling bash-git-prompt...\e[0m"
-cd ~
-git clone https://github.com/magicmonty/bash-git-prompt.git .bash-git-prompt --depth=1
-echo -e "source ~/.bash-git-prompt/gitprompt.sh" >> $HOME/.bashrc
-GIT_PROMPT_ONLY_IN_REPO=1
 
 # Post execution steps:
   # Configure git email and name
