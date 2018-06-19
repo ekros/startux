@@ -42,6 +42,10 @@ sudo apt -y install remmina
 echo -e "\e[1;31mInstalling Trash...\e[0m"
 sudo apt -y install trash
 
+# Install xscreensaver and extras
+echo -e "\e[1;31mInstalling screensaver...\e[0m"
+sudo apt -y install xscreensaver xscreensaver-data-extra xscreensaver-gl-extra
+
 # Install Atom
 echo -e "\e[1;31mInstalling Atom...\e[0m"
 # TODO ONLY DO THIS IF NOT INSTALLED
