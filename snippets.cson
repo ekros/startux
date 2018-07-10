@@ -34,6 +34,8 @@
     'prefix': 'container-redux'
     'body': """
     import { Meteor } from 'meteor/meteor';
+    import { connect } from "react-redux";
+    import { compose } from "recompose";
     import { withMeteorTracker } from '/imports/ui/lib/react-komposer-meteor';
 
     function reactiveMapper(props, onData) {
