@@ -30,6 +30,36 @@
     export default $1;
     """ 
 
+  'Komposer and redux container':
+    'prefix': 'container-redux'
+    'body': """
+    import { Meteor } from 'meteor/meteor';
+    import { withMeteorTracker } from '/imports/ui/lib/react-komposer-meteor';
+
+    function reactiveMapper(props, onData) {
+      const subReady = Meteor.subscribe('your_subscription').ready();
+
+      if (subReady) {
+        // your finds here
+      }
+
+      onData(undefined,
+        {
+        });
+    }
+
+    const mapStateToProps = state => ({
+    });
+
+    const mapDispatchToProps = dispatch => ({
+    });
+
+    export const $1 = compose(
+      connect(mapStateToProps, mapDispatchToProps),
+      withMeteorTracker(reactiveMapper)
+    )($2);
+    """
+
   'React class constructor':
     'prefix': 'rcon'
     'body': """
