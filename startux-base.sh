@@ -99,7 +99,7 @@ sudo npm install -g apm
 
 # Install Atompackages
 echo -e "\e[1;31mInstalling Atom extra packages...\e[0m"
-apm install color-picker emmet highlight-selected javascript-snippets meteor-snippets react git-time-machine git-plus merge-conflicts semicol goto file-icons atom-ternjs pigments tool-bar markdown-writer tool-bar-markdown-writer markdown-pdf bezier-curve-editor split-diff atom-typescript refactor js-refactor atom-prettier autocomplete-js-import clipboard-plus meteor-api atom-ide-ui ide-typescript
+apm install color-picker emmet highlight-selected javascript-snippets meteor-snippets react git-time-machine git-plus merge-conflicts semicol goto file-icons atom-ternjs pigments tool-bar markdown-writer tool-bar-markdown-writer markdown-pdf bezier-curve-editor split-diff atom-typescript refactor js-refactor atom-prettier autocomplete-js-import clipboard-plus meteor-api atom-ide-ui ide-typescript todo-show npm-library-description
 
 # Instal missing dependencies
 echo -e "\e[1;31mInstalling missing dependencies (if any)...\e[0m"
