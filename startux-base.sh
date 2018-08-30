@@ -115,7 +115,7 @@ echo "Note: Use this instructions to configure atom-ternjs https://atom.io/packa
 
 # Install zsh, an alternative customizable bash shell
 echo -e "\e[1;31mInstalling Zsh...\e[0m"
-sudo apt -y install Zsh
+sudo apt -y install zsh
 
 # Set zsh as default shell
 echo -e "\e[1;31mSetting Zsh as default shell...\e[0m"
