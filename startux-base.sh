@@ -93,6 +93,10 @@ sudo npm install -g fkill-cli
 echo -e "\e[1;31mInstalling git quick-stats...\e[0m"
 git clone https://github.com/arzzen/git-quick-stats.git && cd git-quick-stats && sudo make install
 
+# Install npm-upgrade, interactively upgrades outdated dependencies
+echo -e "\e[1;31mInstalling git quick-stats...\e[0m"
+sudo npm i -g npm-upgrade
+
 # Install apm, the Atom Package manager
 echo -e "\e[1;31mInstalling apm, Atom Package Manager...\e[0m"
 sudo npm install -g apm
