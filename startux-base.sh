@@ -10,9 +10,9 @@ cp -f $HOME/.profile $HOME/.profile.backup
 echo -e "\e[1;31mRetrieving list of packages...\e[0m"
 sudo apt -qq update
 
-# Install Terminator. A super-killer terminal
-echo -e "\e[1;31mInstalling Terminator...\e[0m"
-sudo apt -y install terminator
+# Install Tilix. An advanced GTK3 tiling terminal emulator.
+echo -e "\e[1;31mInstalling Tilix...\e[0m"
+sudo apt -y install tilix
 
 # Install curl
 echo -e "\e[1;31mInstalling curl...\e[0m"
