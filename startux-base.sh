@@ -97,6 +97,10 @@ git clone https://github.com/arzzen/git-quick-stats.git && cd git-quick-stats &&
 echo -e "\e[1;31mInstalling git quick-stats...\e[0m"
 sudo npm i -g npm-upgrade
 
+# Instal emma-cli, Terminal assistant to find and install node packages
+echo -e "\e[1;31mInstalling emma-cli...\e[0m"
+sudo npm i -g emma-cli
+
 # Install apm, the Atom Package manager
 echo -e "\e[1;31mInstalling apm, Atom Package Manager...\e[0m"
 sudo npm install -g apm
