@@ -46,6 +46,10 @@ sudo apt -y install trash
 echo -e "\e[1;31mInstalling screensaver...\e[0m"
 sudo apt -y install xscreensaver xscreensaver-data-extra xscreensaver-gl-extra
 
+# Install autojump, a convenient replacement for cd
+echo -e "\e[1;31mInstalling autojump...\e[0m"
+sudo apt -y install autojump
+
 # Install Atom
 echo -e "\e[1;31mInstalling Atom...\e[0m"
 # TODO ONLY DO THIS IF NOT INSTALLED
