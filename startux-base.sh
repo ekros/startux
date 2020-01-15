@@ -101,7 +101,7 @@ git clone https://github.com/arzzen/git-quick-stats.git && cd git-quick-stats &&
 echo -e "\e[1;31mInstalling git quick-stats...\e[0m"
 sudo npm i -g npm-upgrade
 
-# Instal emma-cli, Terminal assistant to find and install node packages
+# Install emma-cli, Terminal assistant to find and install node packages
 echo -e "\e[1;31mInstalling emma-cli...\e[0m"
 sudo npm i -g emma-cli
 
@@ -153,6 +153,8 @@ alias clut="git diff | grep // && git diff | grep console. && git diff | grep TO
 echo "alias clut=\"git diff | grep // && git diff | grep console. && git diff | grep TODO\"" >> $HOME/.zshrc
 alias yarn="yarn --emoji"
 echo "alias yarn=\"yarn --emoji\"" >> $HOME/.zshrc
+echo "Setting alias 'maj'. It executes majestic testing app"
+alias maj="meteor majestic --app -- --verbose --passWithNoTests"
 
 # lol, a popular git log alias
 git config --global alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit --all"
