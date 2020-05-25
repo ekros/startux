@@ -28,7 +28,7 @@
     const $1 = withMeteorTracker(reactiveMapper)($2);
 
     export default $1;
-    """ 
+    """
 
   'Komposer and redux container':
     'prefix': 'container-redux'
@@ -74,13 +74,19 @@
   'Arrow function':
     'prefix': 'arr'
     'body': '() => {$1}'
- 
+
   'Log a variable':
     'prefix': 'logvar'
     'body': """
     console.log("$1", $1);
     """
-        
+
+  'Log in color':
+    'prefix': 'logc'
+    'body': """
+    console.log(`%c${$1}`, "background:$2;color:white;");
+    """
+
   'React Stateless Component':
     'prefix': 'stateless'
     'body': """
@@ -97,9 +103,9 @@
     \\};
 
     export default $1;
-    
+
     """
-  
+
   'React Component ES7':
     'prefix': 'recomp'
     'body': """
@@ -118,7 +124,7 @@
         );
       \\}
     \\}
-    
+
     """
 
   'Pretty print component state':
@@ -128,15 +134,15 @@
   'PropTypes.object':
     'prefix': 'probj'
     'body': '$1: PropTypes.object,'
-    
+
   'PropTypes.number':
     'prefix': 'prnum'
     'body': '$1: PropTypes.number,'
-    
+
   'PropTypes.string':
     'prefix': 'prstr'
     'body': '$1: PropTypes.string,'
-    
+
   'PropTypes.function':
     'prefix': 'prfun'
     'body': '$1: PropTypes.func,'
@@ -148,7 +154,7 @@
   'Destructuring this.state':
     'prefix': 'ts'
     'body': 'const { $1 } = this.state;'
-  
+
   'Destructuring this.props':
     'prefix': 'tp'
     'body': 'const { $1 } = this.props;'
@@ -169,7 +175,7 @@
     console.log("wasted:");
     Perf.printWasted(meas);
     """
-  
+
   'Component prop':
     'prefix': 'pp'
     'body': '$1={$1}'
