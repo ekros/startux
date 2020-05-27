@@ -163,6 +163,7 @@ git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.l "log --stat"
+git config --global alias.pushf "push --force-with-lease"
 # git customizations
 git config --global help.autocorrect 50
 git config --global color.status.changed "white yellow bold"
