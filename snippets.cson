@@ -71,6 +71,28 @@
     }
     """
 
+  'MobX container':
+    'prefix': 'container-mobx'
+    'body': """
+    import React from "react";
+    import { connect } from "react-redux";
+    import { compose } from "recompose";
+    import { inject, observer } from "mobx-react";
+
+    const $1 = inject("$2")(
+      observer(({ $2 }) => {
+          }
+
+          return message;
+        });
+
+        return $3;
+      })
+    );
+
+    export default $1;
+    """
+
   'Arrow function':
     'prefix': 'arr'
     'body': '() => {$1}'
