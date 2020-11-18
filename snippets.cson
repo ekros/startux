@@ -50,6 +50,7 @@
         });
     }
 
+
     const mapStateToProps = state => ({
     });
 
@@ -79,14 +80,14 @@
     import { compose } from "recompose";
     import { inject, observer } from "mobx-react";
 
-    const $1 = inject("$2")(
-      observer(({ $2 }) => {
+    const $1 = inject("timingDataStore")(
+      observer(({ timingDataStore }) => {
           }
 
           return message;
         });
 
-        return $3;
+        return $2;
       })
     );
 
@@ -109,8 +110,8 @@
     console.log(`%c${$1}`, "background:$2;color:white;");
     """
 
-  'React Stateless Component':
-    'prefix': 'stateless'
+  'React Functional Component':
+    'prefix': 'funco'
     'body': """
     import React from 'react';
     import PropTypes from 'prop-types';
@@ -127,6 +128,18 @@
     export default $1;
 
     """
+
+  'useState hook':
+    'prefix': 'uses'
+    'body': 'const [$1, $2] = useState($3);'
+
+  'useEffect hook':
+    'prefix': 'usee'
+    'body': 'useEffect(() => {$1});'
+
+  'useRef hook':
+    'prefix': 'user'
+    'body': 'const $1 = useRef($2);'
 
   'React Component ES7':
     'prefix': 'recomp'
